@@ -20,7 +20,7 @@ interface QueuePatient {
 
 const manchesterColors: Record<string, { color: string; textColor: string; label: string }> = {
   "MUITO URGENTE": { color: "#FF6600", textColor: "#ffffff", label: "Muito Urgente" },  // Laranja
-  URGENTE: { color: "#FFCC00", textColor: "#1d334a", label: "Urgente" },               // Amarelo
+  "URGENTE": { color: "#FFCC00", textColor: "#1d334a", label: "Urgente" },               // Amarelo
   "POUCO URGENTE": { color: "#00CC00", textColor: "#ffffff", label: "Pouco Urgente" }, // Verde
   "NÃO URGENTE": { color: "#0066FF", textColor: "#ffffff", label: "Não Urgente" },     // Azul
 }

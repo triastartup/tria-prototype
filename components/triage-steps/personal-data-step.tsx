@@ -64,14 +64,14 @@ export function PersonalDataStep({ data, onDataChange, onConfirm, onGoBack }: Pe
     today.setHours(0, 0, 0, 0)
     
     if (selectedDate > today) {
-      return "A data de nascimento não pode ser futura"
+      return "A data de nascimento não pode ser após a data atual"
     }
     
     // Calcular idade
     const ageInYears = (today.getTime() - selectedDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000)
     
     if (ageInYears > 123) {
-      return "A idade máxima permitida é 123 anos"
+      return "Idade inválida"
     }
     
     return null
